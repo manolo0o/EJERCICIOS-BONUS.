@@ -1,12 +1,14 @@
-# INGRESAR EN METROS Y VISUALIZAR EN KILOMETROS
+# INGRESO DE VOLTAJES 
+v1 = int(input("ingrese voltaje 1 : "))
+v2 = int(input("ingrese voltaje 2 : "))
+v3 = int(input("ingrese voltaje 3 : "))
+v4 = int(input("ingrese voltaje 4 : "))
+v5 = int(input("ingrese voltaje 5 : "))
 
-#CONVERSOS METROS A KM
-def convertidor_kilometros(distancia_Kms):
+prom = (v1 + v2 + v3 + v4 + v5) / 5 # CALCULO DE PROMEDIO
+print (prom) # PROMEDIO
 
-    distancia_Kms = distancia_Mtrs/ 1000
-    return distancia_Kms
-
-distancia_Mtrs = float(input("INGRESE LA DISTANCIA EN METROS :"))
-distancia_Kms = convertidor_kilometros(distancia_Mtrs)
-
-print(f"La distancia en kilometros es:{distancia_Kms}Kms")
+if prom > int(220) :
+    print("ALTO VOLTAJE")
+elif prom < int(220) :
+    print ("VOLTAJE CORRECTO")
